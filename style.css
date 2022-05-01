@@ -1,0 +1,419 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f4efef;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+:root {
+	--font-size: 1.8rem;
+	--max-width: 90%;
+	--gray-color: gray;
+	--light-gray: rgb(225, 221, 221);
+	--coral-color: coral;
+	--yellow-color: rgb(251, 162, 8);
+	--red-color: #cc2f2f;
+	--light-purple-color: rgb(187, 104, 187);
+	--blue-color: #4baff2;
+}
+
+/* utility */
+
+.btn-red {
+	background-color: var(--red-color);
+}
+.btn-coral {
+	background-color: var(--coral-color);
+}
+.btn-gray {
+	background-color: var(--gray-color);
+}
+.btn-lgtpurple {
+	background-color: var(--light-purple-color);
+}
+
+.btn-blue {
+	background-color: var(--blue-color);
+}
+
+.btn-yellow {
+	background-color: var(--yellow-color);
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 13rem;
+	height: 4rem;
+	text-decoration: none;
+	color: white;
+	transition: all 0.3s ease;
+	font-size: 1.7rem;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.category {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	font-size: 0.9rem;
+	height: 2.4rem;
+	color: white;
+	text-transform: uppercase;
+}
+
+/* General */
+
+header {
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 5fr 2fr 1fr;
+	font-size: var(--font-size);
+	max-width: var(--max-width);
+	padding: 1.5rem 0;
+	margin: 0 auto;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.logo-image {
+	width: 18rem;
+	object-fit: cover;
+}
+
+.nav-items {
+	list-style: none;
+	display: flex;
+}
+
+.icons a {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--gray-color);
+	padding-left: 0.5rem;
+	font-size: 3rem;
+}
+
+.nav-items li a {
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	padding: 1rem;
+}
+
+.nav-items li a:hover {
+	background: #f4efef;
+	color: black;
+}
+
+.nav-items .current {
+	background: var(--red-color);
+	color: white;
+}
+
+.hero {
+	color: white;
+	height: 63vh;
+	background-color: rgba(0, 0, 0, 0.45);
+	position: relative;
+	line-height: 1.5;
+}
+
+.hero::before {
+	content: "";
+	background-image: url(./images/featured.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 63vh;
+	max-width: var(--max-width);
+	margin: 0 auto;
+}
+
+.text {
+	white-space: pre-line;
+	font-size: var(--font-size);
+	margin-bottom: 1.5rem;
+}
+
+.hero-content h1 {
+	font-size: 3.5rem;
+	margin: 0.5rem 0;
+}
+
+#sports {
+	width: 5.4rem;
+}
+
+.article-container {
+	max-width: var(--max-width);
+	margin: 3.3rem auto;
+}
+
+.sub-head {
+	margin: 1.2rem 0;
+	font-size: var(--font-size);
+	font-weight: 900;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+.articles {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	grid-template-areas:
+		"article-one article-one article-two"
+		"article-three article-four article-five"
+		"article-six article-seven article-seven";
+}
+
+.article-content-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 20rem;
+}
+
+.row-article {
+	height: 25rem;
+	background: white;
+	padding: 1.5rem;
+}
+
+.column-article {
+	height: 40rem;
+	background: white;
+	padding: 1.5rem;
+}
+
+.article-one {
+	grid-area: article-one;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+}
+
+.article-two {
+	grid-area: article-two;
+	color: white;
+	background-color: rgb(60, 55, 55);
+}
+
+.article-three {
+	grid-area: article-three;
+	display: flex;
+	flex-direction: column;
+}
+
+.article-four {
+	grid-area: article-four;
+}
+
+.article-five {
+	grid-area: article-five;
+}
+
+.article-six {
+	grid-area: article-six;
+	background-color: rgb(190, 26, 26);
+	color: white;
+	padding-top: 2rem;
+}
+
+.article-seven {
+	grid-area: article-seven;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+}
+
+.flex-image {
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+}
+
+.flex-image-two {
+	width: 100%;
+	height: 55%;
+	object-fit: cover;
+	margin-top: 1.3rem;
+}
+
+.grid-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.heading {
+	font-size: 1.4rem;
+	font-weight: 800;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	margin: 1rem 0;
+}
+
+.article-text {
+	font-size: 1.65rem;
+	letter-spacing: 1.1px;
+	line-height: 1.3;
+	margin-top: 0.5rem;
+}
+
+.ent {
+	width: 10rem;
+}
+
+.tech {
+	width: 8rem;
+	margin-top: 1.5rem;
+}
+
+.footer {
+	background-color: rgb(44, 43, 43);
+	height: 60vh;
+	padding: 2.5rem 0;
+}
+
+.footer-content {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+	grid-template-areas:
+		"logo-footer news-letter links club"
+		"copy-right copy-right copy-right copy-right";
+}
+
+.logo-footer {
+	grid-area: logo-footer;
+	padding: 0 1rem;
+}
+
+.news-letter {
+	grid-area: news-letter;
+	padding: 0 1rem;
+}
+
+.links {
+	grid-area: links;
+	padding: 0 1rem;
+}
+
+.club {
+	grid-area: club;
+	padding: 0 1rem;
+}
+
+.copy-right {
+	grid-area: copy-right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(71, 68, 68);
+	height: 4.5rem;
+	font-size: 1.3rem;
+}
+
+.footer-image {
+	width: 15rem;
+	margin-bottom: 1rem;
+}
+
+#input {
+	margin: 1rem 0;
+	width: 100%;
+	height: 3.5rem;
+	outline: 0;
+}
+
+.footer-btn-one {
+	width: 100%;
+}
+
+.footer-nav li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.6rem;
+}
+
+.footer-nav li {
+	padding: 1.1rem 0;
+	list-style: none;
+	border-bottom: 0.3px solid rgb(71, 68, 68);
+}
+
+.footer-btn-two {
+	margin-top: 1.5rem;
+	width: 11rem;
+}
+
+#about-section {
+	display: grid;
+	grid-template-columns: 3fr 1.2fr;
+	max-width: var(--max-width);
+	margin: 3rem auto;
+	gap: 2.5rem;
+}
+
+#about-section .about-content {
+	background-color: white;
+	height: 100vh;
+	padding: 1rem 2rem;
+}
+
+#about-section .about-heading {
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	font-weight: 900;
+	padding: 1rem 0;
+	letter-spacing: 0;
+}
+
+.aside-content {
+	background-color: rgb(190, 26, 26);
+	color: white;
+	padding: 1.5rem;
+	height: 34vh;
+}
+
+.aside-btn {
+	width: 100%;
+	background-color: black;
+	margin-top: 1rem;
+}
