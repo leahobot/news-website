@@ -8,15 +8,16 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
                   crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <link rel="icon" href="./images/favicon.ico">
-            <link rel="stylesheet" href="./style.css">
-            <title>NewGrid | About</title>
+            <link rel="stylesheet" href="../css/style.css">
+            <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css/mobile.css">
+            <link rel="icon" href="../images/favicon.ico">
+            <title>NewGrid | Articles</title>
       </head>
 
       <body>
             <header>
                   <nav class="navBar">
-                        <img src="./images/logo.png" class="logo-image" alt="logo">
+                        <img src="../images/logo.png" class="logo-image" alt="logo">
                         <div class="icons">
                               <a href="http://www.facebook.com" target="_blank">
                                     <i class="fa-brands fa-facebook-square"></i>
@@ -32,24 +33,28 @@
                               </a>
                         </div>
                         <ul class="nav-items">
-                              <li><a href="./index.html">Home</a></li>
-                              <li><a href="/" class=" current">About</a></li>
+                              <li><a href="../index.html">Home</a></li>
+                              <li><a href="./about.html">About</a></li>
                         </ul>
                   </nav>
             </header>
 
-            <section id="about-section">
-                  <div class="about-content">
-                        <h1 class="about-heading">About our organisation</h1>
-
-                        <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia
-                              eum a fugiat tempore
-                              repellendus quis iste ex, quisquam itaque. Lorem ipsum dolor sit amet consectetur
-                              adipisicing elit. Maiores quia voluptatem similique quas reiciendis rerum voluptas,
-                              tempora explicabo veniam libero.
-                        </p>
+            <section id="sections">
+                  <div class="article-page">
+                        <img class="article-image" src="../images/ent1.jpg" alt="Entertainment">
+                        <h1 class="about-heading">Lorem ipsum dolor sit amet.</h1>
+                        <div class="editor-details">
+                              <div class="details">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="article-text"><small>Written by Ellen Mark, May 05, 2022</small></p>
+                              </div>
+                              <span class="btn-lgtpurple category ent">Entertainment</span>
+                        </div>
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                              recusandae sequi architecto! Natus eligendi, impedit exercitationem facilis deleniti
+                              debitis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quas,
+                              dignissimos facere dolores qui quo. </p>
                         <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus,
-                              eaque laudantium
                               adipisci repudiandae ea atque consequatur perferendis accusamus vel nesciunt ipsum facere
                               voluptas qui temporibus rem aut repellendus possimus tenetur dolore esse animi quas eius.
                               Sint velit vitae neque repudiandae assumenda dolorem id quisquam expedita aut unde,
@@ -59,27 +64,35 @@
                               Magnam est iusto aspernatur quasi omnis perferendis doloribus recusandae similique ipsa
                               illum enim, laboriosam neque. Velit magni laboriosam culpa dolor libero ipsa iure dolorum
                               porro natus explicabo! At error ut recusandae voluptatem nemo voluptas consectetur
-                              expedita voluptate cumque iusto distinctio fugit, vel veniam excepturi delectus ex dolor
-                              officiis officia quo inventore voluptates ducimus minima eius provident. Saepe provident
-                              iste itaque ex illum necessitatibus quo maxime consequuntur, eveniet, rerum reprehenderit
-                              corporis? Iste blanditiis deleniti consectetur, perferendis similique voluptatem
-                              aspernatur ad vitae impedit labore tempore culpa quasi illo, eveniet hic unde
-                              reprehenderit soluta numquam fugit veniam iure! Excepturi repellendus velit inventoraae
-                              dolor corrupti obcaecati odit reprehenderit magni dicta blanditiis.
+                              expedita voluptate cumque iusto distinctio fugit, vel veniam excepturi delectus ex dolor.
                         </p>
                   </div>
-                  <aside class="aside-content">
-                        <h2 class="sub-head">Join our club</h2>
-                        <p class=" article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, eum.
-                        </p>
-                        <a href="#" class="btn aside-btn">Join Now</a>
+                  <aside>
+                        <aside class="links" id="aside-links">
+                              <h2 class="sub-head">categories</h2>
+                              <ul class="footer-nav">
+                                    <li><i class="fa-solid fa-chevron-right"></i><a href="#">Sports</a></li>
+                                    <li><i class="fa-solid fa-chevron-right"></i><a href="#">Entertainment</a></li>
+                                    <li><i class="fa-solid fa-chevron-right"></i><a href="#">Technology</a></li>
+                                    <li><i class="fa-solid fa-chevron-right"></i><a href="#">Fashion</a></li>
+                                    <li><i class="fa-solid fa-chevron-right"></i><a href="#">Shopping</a></li>
+                              </ul>
+                        </aside>
+                        <aside class="aside-content">
+                              <h2 class="sub-head">Join our club</h2>
+                              <p class=" article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
+                                    eum.
+                              </p>
+                              <a href="#" class="btn aside-btn">Join Now</a>
+                        </aside>
                   </aside>
+
             </section>
 
             <footer class="footer">
                   <div class="footer-content">
                         <div class="logo-footer">
-                              <img class="footer-image" src="./images/logo_light.png" alt="logo">
+                              <img class="footer-image" src="../images/logo_light.png" alt="logo">
                               <p class="article-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
                                     atque quod assumenda!
                                     At,illo hic? Lorem ipsum dolor sit amet.

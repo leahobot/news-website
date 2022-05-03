@@ -1,0 +1,163 @@
+.icons {
+	display: none;
+}
+
+nav {
+	grid-template-columns: 1fr;
+	font-size: 1.5rem;
+	place-items: center;
+}
+
+.nav-items {
+	margin-top: 2rem;
+}
+
+.hero-content {
+	padding: 0 2rem;
+}
+
+.text {
+	width: 50%;
+	font-size: 1.5rem;
+}
+
+.hero-content a {
+	display: none;
+}
+
+.articles {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	grid-template-areas:
+		"article-one article-two"
+		"article-three article-four"
+		"article-five article-six"
+		"article-seven .";
+}
+
+.article-one {
+	grid-template-columns: 1fr;
+}
+
+.article-seven {
+	grid-template-columns: 1fr;
+}
+
+.row-article {
+	height: 40rem;
+}
+
+.article-content-flex {
+	justify-content: flex-start;
+	height: 15rem;
+}
+
+.footer {
+	height: 80vh;
+}
+
+.footer-content h2 {
+	font-size: 1.6rem;
+}
+
+.footer-content {
+	gap: 1rem;
+}
+
+#sections .about-heading {
+	font-size: 2.5rem;
+}
+
+#sections .section-content {
+	height: 175vh;
+}
+
+.aside-content {
+	height: 45vh;
+}
+
+.article-page {
+	height: 205vh;
+}
+
+@media screen and (max-width: 600px) {
+	.hero-content h1 {
+		font-size: 2.7rem;
+	}
+
+	.hero {
+		line-height: 1.2;
+	}
+
+	.hero-content {
+		padding: 0 3rem;
+	}
+
+	.text {
+		width: 80%;
+	}
+
+	.articles {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		grid-template-areas:
+			"article-one"
+			"article-two"
+			"article-three"
+			"article-four"
+			"article-five"
+			"article-six"
+			"article-seven";
+	}
+
+	.article-content-flex {
+		height: 12.5rem;
+	}
+
+	.footer-content {
+		grid-template-columns: 1fr;
+		gap: 4rem;
+		grid-template-areas:
+			"logo-footer"
+			"news-letter"
+			"links"
+			"club"
+			"copy-right";
+	}
+
+	.footer {
+		height: 200vh;
+		padding: 2.5rem 0;
+	}
+
+	#sections {
+		grid-template-columns: 1fr;
+		gap: 2.5rem;
+	}
+
+	#sections .about-heading {
+		font-size: 2rem;
+	}
+
+	#sections .section-content {
+		text-align: center;
+		height: 220vh;
+	}
+
+	.aside-content {
+		height: 35vh;
+	}
+
+	.article-page {
+		height: 230vh;
+	}
+
+	.article-page h1,
+	.article-page p {
+		text-align: center;
+	}
+
+	#aside-links {
+		text-align: center;
+	}
+}

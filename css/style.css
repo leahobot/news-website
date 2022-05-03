@@ -114,6 +114,7 @@ nav {
 }
 
 .nav-items li a {
+	border: 0;
 	text-decoration: none;
 	color: black;
 	font-weight: 600;
@@ -140,7 +141,7 @@ nav {
 
 .hero::before {
 	content: "";
-	background-image: url(./images/featured.jpg);
+	background-image: url(../images/featured.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -197,6 +198,15 @@ nav {
 		"article-one article-one article-two"
 		"article-three article-four article-five"
 		"article-six article-seven article-seven";
+}
+
+.articles a {
+	text-decoration: none;
+	color: black;
+}
+
+#article-heading {
+	color: white;
 }
 
 .article-content-flex {
@@ -345,6 +355,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 1.5rem 0;
 	background-color: rgb(71, 68, 68);
 	height: 4.5rem;
 	font-size: 1.3rem;
@@ -372,10 +383,14 @@ nav {
 	font-size: 1.6rem;
 }
 
+.footer-nav li a:hover {
+	color: var(--red-color);
+}
+
 .footer-nav li {
 	padding: 1.1rem 0;
 	list-style: none;
-	border-bottom: 0.3px solid rgb(71, 68, 68);
+	border-bottom: 0.5px dotted rgb(71, 68, 68);
 }
 
 .footer-btn-two {
@@ -383,7 +398,7 @@ nav {
 	width: 11rem;
 }
 
-#about-section {
+#sections {
 	display: grid;
 	grid-template-columns: 3fr 1.2fr;
 	max-width: var(--max-width);
@@ -391,13 +406,13 @@ nav {
 	gap: 2.5rem;
 }
 
-#about-section .about-content {
+#sections .section-content {
 	background-color: white;
 	height: 100vh;
 	padding: 1rem 2rem;
 }
 
-#about-section .about-heading {
+#sections .about-heading {
 	text-transform: uppercase;
 	font-size: 3.5rem;
 	font-weight: 900;
@@ -405,15 +420,63 @@ nav {
 	letter-spacing: 0;
 }
 
+.section-content p {
+	text-align: justify;
+}
+
 .aside-content {
 	background-color: rgb(190, 26, 26);
 	color: white;
 	padding: 1.5rem;
-	height: 34vh;
+	height: 35vh;
 }
 
 .aside-btn {
 	width: 100%;
 	background-color: black;
 	margin-top: 1rem;
+}
+
+.article-page {
+	background-color: white;
+	height: 175vh;
+	padding: 1rem 2rem;
+}
+
+.article-image {
+	width: 100%;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+}
+
+.details i {
+	padding-top: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.editor-details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f4efef;
+	padding: 1.5rem;
+	margin: 1rem 0;
+}
+
+#aside-links {
+	background-color: white;
+	padding: 0.3rem 4rem 1.5rem 1.8rem;
+	margin-bottom: 2.5rem;
+}
+
+#aside-links li a {
+	color: black;
+}
+
+#aside-links i {
+	font-size: var(--font-size);
+	padding-right: 0.7rem;
 }
